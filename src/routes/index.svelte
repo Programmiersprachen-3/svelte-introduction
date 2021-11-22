@@ -1,6 +1,7 @@
 <script>
 	import Description from '$lib/components/Description.svelte';
 	import Underline from '$lib/components/Underline.svelte';
+	import Textanimation from '$lib/components/Textanimation.svelte';
 </script>
 
 <h1>UI Exercises</h1>
@@ -11,4 +12,8 @@
 	description="This component creates an underline animation effect for the heading."
 >
 	<Underline />
+</Description>
+
+<Description title="Animate text" description="Text animation as a wave.">
+	<Textanimation />
 </Description>
