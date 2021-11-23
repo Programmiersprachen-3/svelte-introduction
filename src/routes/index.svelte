@@ -5,6 +5,7 @@
 	import ScrollbarStyling from '$lib/components/ScrollbarStyling.svelte';
 	import ZoomOnHover from '$lib/components/ZoomOnHover.svelte';
 	import AnimateOnHover from '$lib/components/AnimateOnHover.svelte';
+	import CursorAnimation from '$lib/components/CursorAnimation.svelte';
 </script>
 
 <div>
@@ -41,3 +42,9 @@
 	<AnimateOnHover />
 </Description>
 
+<Description
+	title="Replace the boring cursor with something more exciting."
+	description="Create a cursor with canvas so you can use your own interactive graphics."
+>
+	<CursorAnimation />
+</Description>
