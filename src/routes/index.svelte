@@ -4,6 +4,7 @@
 	import Textanimation from '$lib/components/Textanimation.svelte';
 	import ScrollbarStyling from '$lib/components/ScrollbarStyling.svelte';
 	import ZoomOnHover from '$lib/components/ZoomOnHover.svelte';
+	import AnimateOnHover from '$lib/components/AnimateOnHover.svelte';
 </script>
 
 <div>
@@ -32,3 +33,11 @@
 <Description title="Image zoom on hover" description="When user hovers image, image zooms in.">
 	<ZoomOnHover />
 </Description>
+
+<Description
+	title="Animate a card element on hover"
+	description="When user moves mouse over card, image translates and overlay image appears."
+>
+	<AnimateOnHover />
+</Description>
+
