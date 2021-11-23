@@ -28,7 +28,7 @@
 
 <div class="cursor-playground">
 	<section>
-		Hier steht Text. Viel Text. Und man könnte bsp. was selektieren.<br />
+		Hier steht Text. Viel Text.<br />
 		Darüber fliegt der Cursor :)
 	</section>
 	<!-- <section>

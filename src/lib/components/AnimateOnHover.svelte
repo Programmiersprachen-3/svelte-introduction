@@ -1,17 +1,25 @@
 <script>
 	import { spring } from 'svelte/motion';
+	import { tweened } from 'svelte/motion';
+	import { cubicOut } from 'svelte/easing';
 
 	let element;
-	let translation = spring(0, {
-		stiffness: 0.1,
-		damping: 0.35
+
+	const translation = tweened(0, {
+		duration: 300,
+		easing: cubicOut
 	});
+
+	// let translation = spring(0, {
+	// 	stiffness: 0.3,
+	// 	damping: 0.15
+	// });
 
 	function handleMousemove(event) {
 		let middle = element.getBoundingClientRect().left + element.getBoundingClientRect().width / 2;
 		let mouseDifference = middle - event.clientX;
 
-		translation.set(mouseDifference / 100);
+		translation.set(mouseDifference / 50);
 	}
 
 	function handleMouseout(event) {
