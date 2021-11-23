@@ -3,6 +3,7 @@
 	import Underline from '$lib/components/Underline.svelte';
 	import Textanimation from '$lib/components/Textanimation.svelte';
 	import ScrollbarStyling from '$lib/components/ScrollbarStyling.svelte';
+	import ZoomOnHover from '$lib/components/ZoomOnHover.svelte';
 </script>
 
 <div>
