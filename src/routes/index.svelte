@@ -4,8 +4,10 @@
 	import Textanimation from '$lib/components/Textanimation.svelte';
 </script>
 
-<h1>UI Exercises</h1>
-<p>Using sveltekit, creating real world scenarios.</p>
+<div>
+	<h1>UI Exercises</h1>
+	<p>Using sveltekit, creating real world scenarios.</p>
+</div>
 
 <Description
 	title="Underline animation"
@@ -17,3 +19,4 @@
 <Description title="Animate text" description="Text animation as a wave.">
 	<Textanimation />
 </Description>
+

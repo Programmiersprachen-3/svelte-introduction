@@ -10,3 +10,12 @@
 	<p>{description}</p>
 	<slot />
 </div>
+
+<style>
+	div {
+		background-color: white;
+		box-shadow: var(--shadow-elevation-medium);
+		border-radius: 25px;
+		padding: 15px;
+	}
+</style>
