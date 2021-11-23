@@ -2,6 +2,7 @@
 	import Description from '$lib/components/Description.svelte';
 	import Underline from '$lib/components/Underline.svelte';
 	import Textanimation from '$lib/components/Textanimation.svelte';
+	import ScrollbarStyling from '$lib/components/ScrollbarStyling.svelte';
 </script>
 
 <div>
@@ -20,3 +21,9 @@
 	<Textanimation />
 </Description>
 
+<Description
+	title="Customized scrollbar"
+	description="Customizing a scrollbar. Only visible in webkit and blink engine browsers!"
+>
+	<ScrollbarStyling />
+</Description>
