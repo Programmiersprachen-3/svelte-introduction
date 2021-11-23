@@ -28,3 +28,7 @@
 >
 	<ScrollbarStyling />
 </Description>
+
+<Description title="Image zoom on hover" description="When user hovers image, image zooms in.">
+	<ZoomOnHover />
+</Description>
