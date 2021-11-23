@@ -6,6 +6,7 @@
 	import ZoomOnHover from '$lib/components/ZoomOnHover.svelte';
 	import AnimateOnHover from '$lib/components/AnimateOnHover.svelte';
 	import CursorAnimation from '$lib/components/CursorAnimation.svelte';
+	import TextStrokeHover from '$lib/components/TextStrokeHover.svelte';
 </script>
 
 <div>
@@ -47,4 +48,11 @@
 	description="Create a cursor with canvas so you can use your own interactive graphics."
 >
 	<CursorAnimation />
+</Description>
+
+<Description
+	title="Show a outline stroke only font when hovered."
+	description="Found on benmingo.com"
+>
+	<TextStrokeHover />
 </Description>
