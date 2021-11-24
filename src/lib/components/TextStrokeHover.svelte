@@ -1,41 +1,18 @@
-<script>
-	import { text } from 'svelte/internal';
-</script>
-
-<div class="fat-type-container">
-	<span class="fat-type">This is the ultimate heading.</span>
-	<span class="fat-type outlined">This is the ultimate heading.</span>
-</div>
+<span class="fat-type">Zero</span>
 
 <style>
-	.fat-type-container {
-		position: relative;
-	}
-
-	.fat-type-container .fat-type {
-		font-family: Helvetica, Arial, sans-serif;
-		font-size: 4.5rem;
-		color: black;
-		opacity: 1;
-		transition: opacity 0.35s;
-	}
-
-	.fat-type-container:hover .fat-type {
-		opacity: 0;
-	}
-
-	.fat-type-container .fat-type.outlined {
-		position: absolute;
-		top: 0;
-		left: 0;
-		-webkit-text-stroke-color: #000;
+	.fat-type {
+		font-size: 56px;
+		font-family: sans-serif;
+		font-weight: bold;
+		-webkit-text-stroke-color: rgba(100, 100, 100, 0);
 		-webkit-text-stroke-width: 2px;
-		color: hsla(0, 0%, 0%, 0);
-		opacity: 0;
-		transition: opacity 0.35s;
+		color: rgba(100, 100, 100, 1);
+		transition: all 0.5s;
 	}
 
-	.fat-type-container:hover .fat-type.outlined {
-		opacity: 1;
+	.fat-type:hover {
+		-webkit-text-stroke-color: rgba(100, 100, 100, 1);
+		color: rgba(100, 100, 100, 0);
 	}
 </style>
