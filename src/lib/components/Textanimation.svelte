@@ -21,7 +21,7 @@
 					duration: 400,
 					delay: i * 200,
 					opacity: 0,
-					start: 0.1,
+					start: 0.0,
 					easing: quintOut
 				}}
 			>
