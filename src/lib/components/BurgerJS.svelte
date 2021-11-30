@@ -27,6 +27,7 @@
 <style>
 	nav {
 		width: 100%;
+		display: inline-block;
 	}
 
 	nav .menu {
