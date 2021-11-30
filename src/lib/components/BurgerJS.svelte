@@ -4,18 +4,54 @@
 -->
 <script>
 	let menuActive = false;
+	let menuContent = [
+		{ title: 'Home', link: '/' },
+		{ title: 'Products', link: '/products' },
+		{ title: 'About', link: '/about' },
+		{ title: 'Impressum', link: '/impressum' }
+	];
 </script>
 
-<button
-	class="menu-button"
-	aria-label="Menu"
-	class:menu-active={menuActive}
-	on:click={() => (menuActive = !menuActive)}
->
-	<span class="menu-icon" />
-</button>
+<nav class:menu-active={menuActive}>
+	<button class="menu-button" aria-label="Menu" on:click={() => (menuActive = !menuActive)}>
+		<span class="menu-icon" />
+	</button>
+
+	<ul class="menu">
+		{#each menuContent as { title, link }}
+			<li><a href={link}>{title}</a></li>
+		{/each}
+	</ul>
+</nav>
 
 <style>
+	nav {
+		width: 100%;
+	}
+
+	nav .menu {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		overflow: hidden;
+	}
+
+	nav li a {
+		display: block;
+		padding: 20px 20px;
+		text-decoration: none;
+	}
+
+	nav li a:hover {
+		color: red;
+	}
+
+	nav ul {
+		clear: both;
+		max-height: 0;
+		transition: max-height 0.2s ease-out;
+	}
+
 	.menu-button {
 		position: relative;
 		padding: 0;
@@ -75,8 +111,24 @@
 		transform: rotate(45deg) translateY(0px);
 	}
 
+	.menu-active .menu {
+		max-height: 240px;
+	}
+
 	/* If screen bigger than 768px -> Burgermenu hidden */
 	@media (min-width: 768px) {
+		nav .menu {
+			clear: none;
+			float: right;
+			max-height: none;
+		}
+		nav li {
+			float: left;
+		}
+		nav li a {
+			padding: 20px 30px;
+		}
+
 		.menu-button {
 			display: none;
 		}
