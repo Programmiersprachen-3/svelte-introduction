@@ -7,6 +7,8 @@
 	import AnimateOnHover from '$lib/components/AnimateOnHover.svelte';
 	import CursorAnimation from '$lib/components/CursorAnimation.svelte';
 	import TextStrokeHover from '$lib/components/TextStrokeHover.svelte';
+	import LottieAnimation from '$lib/components/LottieAnimation.svelte';
+	import Lottie from 'lottie-web';
 </script>
 
 <div>
@@ -55,4 +57,11 @@
 	description="Found on benmingo.com"
 >
 	<TextStrokeHover />
+</Description>
+
+<Description
+	title="Plays a lottie animation."
+	description="Create your animation in After Effects or other supported tools."
+>
+	<LottieAnimation />
 </Description>
