@@ -4,11 +4,11 @@
 	import lottie from 'lottie-web';
 	console.log(lottie);
 	let animationContainer;
-
+	let animation;
 	onMount(() => {
-		var animation = lottie.loadAnimation({
+		animation = lottie.loadAnimation({
 			container: animationContainer, // Required
-			path: 'static/assets/74694-confetti.json', // Required
+			path: 'assets/74694-confetti.json', // Required
 			renderer: 'svg', // Required
 			loop: true, // Optional
 			autoplay: true, // Optional

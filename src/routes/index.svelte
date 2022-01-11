@@ -8,7 +8,6 @@
 	import CursorAnimation from '$lib/components/CursorAnimation.svelte';
 	import TextStrokeHover from '$lib/components/TextStrokeHover.svelte';
 	import LottieAnimation from '$lib/components/LottieAnimation.svelte';
-	import Lottie from 'lottie-web';
 </script>
 
 <div>
